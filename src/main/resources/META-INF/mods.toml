@@ -1,0 +1,36 @@
+modLoader="javafml" #mandatory
+loaderVersion="[40,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="MIT"
+[[mods]] #mandatory
+modId="darklands" #mandatory
+version="0.1" #mandatory
+displayName="DarkLandsMod" #mandatory
+logoFile="examplemod.png" #optional
+credits="A mod intented for the dark lands remastered map by Fireball_2000" #optional
+# A text field displayed in the mod UI
+authors="Fireball_2000/Max The Great" #optional
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+A Souls-like mode created by Fireball_2000, while this mod was made for the dark lands map, if you somehow read this then you are allowed to use/modify it to your heart's content.(PS: dont expect things to be balanced or convinent as the mod was made for a very contrained context)
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.darklands]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[40,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+# Here's another dependency
+[[dependencies.darklands]]
+    modId="minecraft"
+    mandatory=true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
+
