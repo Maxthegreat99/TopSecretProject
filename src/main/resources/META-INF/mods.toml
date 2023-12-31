@@ -3,7 +3,7 @@ loaderVersion="[40,)" #mandatory This is typically bumped every Minecraft versio
 license="MIT"
 [[mods]] #mandatory
 modId="darklands" #mandatory
-version="0.1" #mandatory
+version="1.0" #mandatory
 displayName="DarkLandsMod" #mandatory
 logoFile="examplemod.png" #optional
 credits="A mod intented for the dark lands remastered map by Fireball_2000" #optional
@@ -25,6 +25,12 @@ A Souls-like mode created by Fireball_2000, while this mod was made for the dark
     ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
+[[dependencies.darklands]]
+    modId = "mowziesmobs"
+	mandatory = true
+	versionRange = "[1.5.32,)"
+	side = "BOTH"
+	ordering="BEFORE"
 # Here's another dependency
 [[dependencies.darklands]]
     modId="minecraft"
